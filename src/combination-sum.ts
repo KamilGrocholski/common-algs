@@ -8,7 +8,7 @@ export default function getCombinationSum(
 
     const logs: string[] = []
     getCombinationSumHelper([], 0, 0, output, candidates, target, logs)
-    console.log(logs)
+    // console.log(logs)
     return output
 }
 function getCombinationSumHelper(
