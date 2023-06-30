@@ -99,10 +99,7 @@ describe('find all frequencies in a sorted array', () => {
 })
 
 describe('evaluate expresson', () => {
-    const cases: [string, number][] = [
-        ['-10+(5+(12+8)-2)+1', 14],
-        ['-1*2/1', -1],
-    ]
+    const cases: [string, number][] = [['-10+(5+(12+8)-2)+1', 14]]
 
     test.each(cases)('given expression %p, returns %p', (input, expected) => {
         expect(evaluateExpression(input)).toBe(expected)

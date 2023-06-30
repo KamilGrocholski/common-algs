@@ -25,14 +25,6 @@ export default function evaluateExpression(exp: string): number {
             result += sign * current
             current = 0
             sign = ((stack.peek() as Signs) * -1) as Signs
-        } else if (char === '*') {
-            result *= sign * current
-            current = 0
-            sign = stack.peek() as Signs
-        } else if (char === '/') {
-            result /= sign * current
-            current = 0
-            sign = stack.peek() as Signs
         } else if (char === '(') {
             stack.push(sign)
         } else if (char === ')') {
